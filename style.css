@@ -2,6 +2,44 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face{
+
+font-family: 'Lato';
+src: url('assets/Lato/Lato-Regular.ttf');
+src: url('assets/Lato/Lato-Regular.ttf?iefix') format('ttf'),
+url('assets/Lato/Lato-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+
+font-family: 'Lato';
+src: url('assets/Lato/Lato-Bold.ttf');
+src: url('assets/Lato/Lato-Bold.ttf?iefix') format('ttf'),
+url('assets/Lato/Lato-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face{
+
+font-family: 'Lato';
+src: url('assets/Lato/Lato-Black.ttf');
+src: url('assets/Lato/Lato-Black.ttf?iefix') format('ttf'),
+url('assets/Lato/Lato-Black.ttf') format('truetype');
+font-weight: 900;
+font-style: normal;	
+}
+@font-face{
+
+font-family: 'Maven Pro';
+src: url('assets/MavenPro/MavenPro-Regular.ttf');
+src: url('assets/MavenPro/MavenPro-Regular.ttf?iefix') format('ttf'),
+url('assets/MavenPro/MavenPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;	
+}
+
+
 /*menu*/
 .wrapper {
 max-width: 1020px;
@@ -60,9 +98,9 @@ color: grey;
 margin: 10px 26px 0 26px;
 }
 header {
-height: 63px;
-background-color: #323232;
-position: relative;
+	height: 63px;
+	background-color: #323232;
+	position: relative;
 }
 /**/
 .container{
@@ -82,18 +120,18 @@ position: relative;
 	left: 8px;
 	margin-top: 2px;
 }
-header::after {
-content: '';
-width: 0;
-height: 0;
-border-left: 45px solid transparent;
-border-right: 45px solid transparent;
-border-top: 25px solid #323232;
-position: absolute;
-left: 50%;
-top: 63px;
-transform: translateX(-50%);
-z-index: 3;
+header:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	border-top: 25px solid #323232;
+	position: absolute;
+	left: 50%;
+	top: 63px;
+	transform: translateX(-50%);
+	z-index: 3;
 }
 .ver_line_right,
 .ver_line_left{
@@ -157,6 +195,10 @@ z-index: 3;
 	height:1px;
 	background-color: #e4e9eb;
 	margin: 0px auto 11px auto;
+}
+.hex:hover{
+	transform: scale(1.1 , 1.1);
+	transition: 1s ease-in;
 }
 /* End Hex */
 /* Start About */
@@ -228,6 +270,15 @@ z-index: 3;
 	position: relative;
 	top: 17px;
 }
+.diblink{
+	text-decoration: none;
+	color: #13b09b;
+}
+.diblink:hover, .diblink:active, .diblink:focus {
+    outline: none;
+    border: 0;
+    text-decoration: none;
+}
 .social div{
 	margin-right: 0px;
 	cursor: pointer;
@@ -237,11 +288,17 @@ z-index: 3;
 	width: 25px;
 	height: 24px;
 }
+.facebook:hover{
+	background-color: blue;
+}
 .twitter{
 	background-color:#6ccbbe;
 	color: #04ac95;
 	width: 24px;
 	height: 24px;
+}
+.twitter:hover{
+	background-color: #99eeed;
 }
 .social_fix{
 	font-size: 15px;
@@ -251,6 +308,11 @@ z-index: 3;
 	color: #13b09b;
 	width: 25px;
 	height: 24px;
+	text-decoration: none;
+}
+.social_fix:hover{
+	background-color: #e56b60;
+	color: #ffffff;
 }
 .pinterest{
 	background-color:#abddd7;
@@ -258,11 +320,17 @@ z-index: 3;
 	width: 24px;
 	height: 24px;
 }
+.pinterest:hover{
+	background-color: brown;
+}
 .in{
 	background-color:#acddd7;
 	color: #01ab94;
 	width: 25px;
 	height: 24px;
+}
+.in:hover{
+	background-color: #e86e91;
 }
 .dribble{
 	background-color:#6dcbbe;
@@ -270,13 +338,21 @@ z-index: 3;
 	width: 24px;
 	height: 24px;
 }
+.dribble:hover{
+	background-color: #e86e91;
+	color: #ffffff;
+}
 .social i{
 	font-size: 13px;
-	color: #2eb398;;
+	color: #2eb398;
 	text-align: center;
 	display: block;
 	margin: 5px auto 0 auto;
 }
+.social i:hover{
+	color: #ffffff;
+}
+
 /* End About */
 /* Start footer */
 .container_footer{
@@ -326,27 +402,30 @@ form{
 	font-weight: 100;
 	color: rgba(190, 190, 190, 255);
 }
-
+::placeholder{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	color: #bebebe;
+	opacity: 1;
+}
 input{
 	width: 568px;
 	height: 38px;
 	margin-bottom: 16px;
 	background-color: #454545;
-	color: rgba(190, 190, 190, 255);
+	color: #bebebe;
 	font-size: 12px;
 	font-family: 'Lato', sans-serif;
 	padding-left: 14px;
 	border: 0;
-}
-input: hover{
-
 }
 textarea{
 	width: 568px;
 	height: 140px; 
 	background-color: #454545;
 	border: 0;
-	color: rgba(190, 190, 190, 255);
+	color: #bebebe;
 	font-size: 12px;
 	font-family: 'Lato', sans-serif;
 	padding-left: 10px;
@@ -418,6 +497,7 @@ form button{
 	margin: 0 auto 11px auto;
 	
 }
+
 /* second footer */
 .second_footer{
 	width: 100%;
