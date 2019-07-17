@@ -1,9 +1,9 @@
 [https://ihopeyouwin.github.io/hexal/index.html](https://ihopeyouwin.github.io/hexal/index.html) - page view
   <br/>
   <br/>
-  
-
-
+  <br/>
+<br/>
+<br/>
 
 
 # Homework: Hexal. Difficulty Level 1.
