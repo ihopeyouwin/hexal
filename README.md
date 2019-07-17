@@ -1,4 +1,6 @@
-[https://ihopeyouwin.github.io/hexal/index.html](https://ihopeyouwin.github.io/hexal/index.html)
+[https://ihopeyouwin.github.io/hexal/index.html](https://ihopeyouwin.github.io/hexal/index.html) - page view
+
+
 
 
 
